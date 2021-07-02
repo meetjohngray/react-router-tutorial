@@ -1,3 +1,6 @@
+// From React Router Crash Course: Free Code Camp
+// https://www.youtube.com/watch?v=Jppuj6M1sJ4
+
 import './App.css'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 import Header from './components/Header'
