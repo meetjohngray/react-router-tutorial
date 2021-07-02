@@ -22,8 +22,12 @@ function App() {
           <Route path='/' component={ Home } exact />
           <Route path='/about' component={ About } />
           <Route path='/profile'>
+            <Profile login={ login } />
+          </Route>
+          {/* Here's one way to have a protected route */}
+          {/* <Route path='/profile'>
             {login ? <Profile /> : <Redirect to='/' />}
-          </Route>  
+          </Route>   */}
           <Route path='/post/:id' component={ Post } />
           <Route component={ NotFound } />
         </Switch>  
